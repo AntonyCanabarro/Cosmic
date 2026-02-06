@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Cosmic</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="LogoCosmica.png">
+</head>
+<body>
+  <!--animacao estrelas-->
+  <canvas id="estrelas"></canvas>
+  
+   <!--dados usuario-->
+   <div class="usuario_area" id="area_usuario">
+         <div id="container_usuario"><h1>Faça login para acessar seus dados
+          </h1> <button id="botao_sair" class="botao_sair" onclick="modal_usuario()">Sair</button></div>
+  </div>
+  
+  <!--modal quiz-->
+  <div id="areaQuiz" class="areaQuiz"><button id="botao_sair" class="sairQuiz" onclick="realQuiz()">Sair</button></div>
+   </div>
+
+   <!-- modal imagem-->
+    <div id="modalLogo" class="modalLogo"><img src="logoSemMargem.png" onclick="modalLogo()" class="logoImg"></div>
+  
+  <!--conteudo do site-->
+  <div id="tudo" class="tudo"> 
+  
+    <!-- header -->
+  <header>
+    <a class="logoNome" onclick="modalLogo()"><img src="logoSemMargem.png" class="logo">Cosmic</a>
+    <div class="links">
+      <a onclick="modal_usuario()" class="botaoUsuario mudar " >Usuario</a>
+      <a href="/login" class="link mudar">Login</a>
+    <a class="link mudar" href="/logout">Logout</a>
+    </div>
+  </header>
+
+  <!-- area de boas-->
+  <div class="boasVindas">
+    <h1 class="tituloBoas">bem-vindo ao Cosmic</h1>
+    <h2 class="subBoas">Flutue no mundo  artístico </h2>
+  </div>
+
+   <!-- barra de pesquisa-->
+  <h1 class="titulo">Algum artista em mente?</h1>
+     <div class="areaPesquisa">
+         <input id="nome" placeholder="Nome do artista">
+  <button class="botaoBuscar" onclick="buscar()">Buscar</button>
+      </div>
+    <div id="containerPesquisa">
+      <h1 class="subTitulo">Resultado da sua pesquisa</h1>
+  <div id="cards"></div>
+    </div>
+
+  <!-- artists fixos aleatorios-->
+  <div id="artistasId">
+    <h1 class="titulo">Sorteie artistas</h1>
+    <button onclick="artistasAleatorios()" class="botaoQuiz">Sortear</button>
+   <div id="areaCards" > 
+   </div>
+  </div>
+  
+   <!-- quiz-->
+   <div id="containerQuiz">
+      <h1 class="titulo"> Quiz sobre Artistas</h1>
+       <button onclick="realQuiz()" class="botaoQuiz">Quiz</button>
+  </div>
+  
+   <!--sobre nos-->
+   <div class="sobreNos" id="sobre-Nos">
+     <h1 class="tituloSobre">Sobre o site</h1>
+     <p class="subTitulo">O Cosmic é um site com o objetivo academico demontrativo de conhecimento, o Cosmic tem o temas cosmico e ele é um site que usa informações do spotify em sua base, podendo ver seus dados do spotify, pesquisar artistas, ver artistas aleatorios, jogar um mini quiz sobre artistas aleatorios.</p><br><br>
+     <h1 class="tituloSobre">
+       Curiosidades
+     </h1>
+     <p class="subTitulo"> este site é a uma segunda versão do meu primeiro site feito no curso, fiz este site para comparar o meu primeiro site feito no curso com o meu ultimo site feito no curso caso queira comparar os site o link aparecera a seguir <a href="https://lucent-douhua-15e265.netlify.app/" class="linkCosmic  mudar"> clique aqui</a></p>
+   </div>
+   <!--Fim da pagina-->
+   <footer>
+     <div class="footer1">
+       <h1 class="tituloFooter">Links Cosmicos</h1>
+     </div>
+     <div class="colunasFooter">
+       <div class="colunas">
+         <h2 class="subTitulo">links</h2>
+         <hr>
+         <a onclick="modal_usuario()" class="botaoUsuario  mudar">Usuario</a>
+         <a href="/login" class="link  mudar">Login</a>
+         <a class="link mudar" href="/logout">Logout</a>
+         <a class="link mudar" href="#nome">pesquisar</a>
+         <a class="link mudar" href="#artistasId">Sortear</a>
+         <a class="link mudar" href="#containerQuiz">quiz</a>
+        
+       </div>
+       <div class="colunas">
+         <h2 class="subTitulo">Contatos</h2>
+         <hr>
+         <a class="link  mudar" href="https://mail.google.com">Gmail</a>
+<a class="link mudar" href="https://github.com/AntonyCanabarro?tab=repositories">GitHub</a>
+<a class="link mudar" href="https://www.instagram.com">Instagram</a>
+<a class="link mudar" href="https://www.whatsapp.com">WhatsApp</a>
+<a class="link mudar" href="https://www.facebook.com">FaceBook</a>
+<a class="link mudar" href="https://www.linkedin.com">LinkDin</a>
+       </div>
+       <div class="colunas">
+         <h2 class="subTitulo">Tecnologias</h2>
+         <hr>
+         <a class="link  mudar" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">html</a>
+<a class="link mudar" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">css</a>
+<a class="link mudar" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">javaScript</a>
+<a class="link mudar" href="https://nodejs.org">node.js</a>
+<a class="link mudar" href="https://github.com/AntonyCanabarro?tab=repositories">GitHub</a>
+<a class="link mudar" href="https://render.com">Render</a>
+       </div>
+     </div>
+      <div class="subTitulo">
+         <p>© 2026 - Direitos Cosmic</p>
+       </div>
+   </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
